@@ -19,5 +19,8 @@ export MANPAGER="less -X"
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
+# allow the use of Ctrl-s in reverse search
+[[ $- == *i* ]] && stty -ixon
+
 source "$HOME/.bashrc"
 
