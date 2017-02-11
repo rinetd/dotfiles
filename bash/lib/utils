@@ -68,7 +68,7 @@ formula_exists() {
   return 1
 }
 
-if [[ -x "$(which brew)" ]]; then
+if [[ -x "$(which brew 2&>/dev/null)" ]]; then
   export HAS_BREW=1
   # BREW_LOCATION=`brew --prefix`
   export BREW_LOCATION="/usr/local"
