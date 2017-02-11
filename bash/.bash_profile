@@ -1,4 +1,5 @@
 #!/bin/bash
+
 source $HOME/.dotfiles/bash/lib/env
 
 # Ignore duplicate commands in the history
@@ -17,3 +18,6 @@ export MANPAGER="less -X"
 # Make new shells get the history lines from all previous
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+source "$HOME/.bashrc"
+

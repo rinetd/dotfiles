@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-source "$HOME/.bash_profile"
+
+# Source global definitions
+source_file /etc/bashrc
 
 ####################################################################################
 # Source                                                                           #
